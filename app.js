@@ -5,12 +5,12 @@ const session = require('express-session')
 const SessionStore = require('connect-mongodb-session')(session)
 const flash = require('connect-flash')
 
-const homeRouter = require('./routes/home.route')
-const productRouter = require('./routes/product.route')
-const authRouter = require('./routes/auth.route')
-const cartRouter = require('./routes/cart.route')
-const orderRouter = require('./routes/orders.route');
-const adminRouter = require('./routes/admin.route')
+const homeRouter = require('app/routes/home.route')
+const productRouter = require('app/routes/product.route')
+const authRouter = require('app/routes/auth.route')
+const cartRouter = require('app/routes/cart.route')
+const orderRouter = require('app/routes/orders.route');
+const adminRouter = require('app/routes/admin.route')
 
 
 
@@ -38,11 +38,11 @@ app.set('view engine','ejs')
 app.set('views','views') //default
 
 app.use('/',homeRouter)
-app.use('/',authRouter)
-app.use('/product',productRouter)
-app.use('/cart',cartRouter)
-app.use('/', orderRouter)
-app.use('/admin',adminRouter)
+//app.use('/',authRouter)
+//app.use('/product',productRouter)
+//app.use('/cart',cartRouter)
+//app.use('/', orderRouter)
+//app.use('/admin',adminRouter)
 
 app.get('/error', (req, res, next) => {
     res.status(500)
