@@ -5,7 +5,7 @@ const session = require('express-session')
 const SessionStore = require('connect-mongodb-session')(session)
 const flash = require('connect-flash')
 
-const homeRouter = require('routes/home.route')
+const homeRouter = require('/routes/home.route')
 const productRouter = require('app/routes/product.route')
 const authRouter = require('app/routes/auth.route')
 const cartRouter = require('app/routes/cart.route')
