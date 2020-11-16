@@ -1,6 +1,6 @@
 const router = require('express').Router() //route level not app level
 
-const homeController = require('../controllers/home.controller')
+const homeController = require('app/controllers/home.controller')
 
 router.get('/',homeController.getHome)
 
