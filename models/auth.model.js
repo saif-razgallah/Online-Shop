@@ -2,8 +2,9 @@ const mongoose = require('mongoose')
 
 const bcrypt = require('bcrypt')
 
-const DB_URL = 'mongodb+srv://saif:cyrUpxekiOmDybiQ@cluster0.icsuz.mongodb.net/online-shop?retryWrites=true&w=majority'
-//'mongodb://localhost:27017/online-shop'
+const DB_URL =
+// 'mongodb+srv://saif:cyrUpxekiOmDybiQ@cluster0.icsuz.mongodb.net/online-shop?retryWrites=true&w=majority'
+'mongodb://localhost:27017/online-shop'
 
 const userSchema = mongoose.Schema({
     username: String,

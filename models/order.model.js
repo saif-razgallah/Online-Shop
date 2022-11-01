@@ -3,8 +3,9 @@ const mongoose = require("mongoose");
 
 const cartModel = require("./cart.model");
 
-const DB_URL = 'mongodb+srv://saif:cyrUpxekiOmDybiQ@cluster0.icsuz.mongodb.net/online-shop?retryWrites=true&w=majority'
-//'mongodb://localhost:27017/online-shop'
+const DB_URL = 
+//'mongodb+srv://saif:cyrUpxekiOmDybiQ@cluster0.icsuz.mongodb.net/online-shop?retryWrites=true&w=majority'
+'mongodb://localhost:27017/online-shop'
 const orderSchema = mongoose.Schema({
     name: String,
     price: Number,
